@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Zoom Assistant",
+  "description": "Zoom assistant is built by GAI platform",
+  "version": "1.0",
+
+  "icons": {
+    "16": "icons/ic_16.png",
+    "48": "icons/ic_48.png",
+    "128": "icons/ic_128.png"
+  },
+
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "storage",
+    "background",
+    "tabCapture"
+  ],
+
+  "host_permissions": [
+    "https://hsbc.zoom.us/*", "https://app.zoom.us/*", "https://zoom.us/*"
+  ],
+
+  "background": {
+    "service_worker": "js/background.js"
+  },
+
+  "action": {
+    "default_icon": "icons/ic_16.png",
+    "default_title": "Extension Popup",
+    "default_popup": "html/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://hsbc.zoom.us/*", "https://app.zoom.us/*", "https://zoom.us/*"],
+      "js": ["js/contentScripts.js"],
+      "css": ["css/contentScripts.css"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["https://hsbc.zoom.us/*", "https://app.zoom.us/*", "https://zoom.us/*"]
+    }
+  ],
+
+  "minimum_chrome_version": "5"
+}
