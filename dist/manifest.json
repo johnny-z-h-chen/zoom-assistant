@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Zoom Assistant",
-  "description": "Zoom assistant is built by GAI platform",
+  "name": "AI Assistant",
+  "description": "AI Assistant is built by GAI platform",
   "version": "1.0",
 
   "icons": {

@@ -1,0 +1,27 @@
+.chat-panel {
+  // border: 1px solid #d7d8d6;
+  position: relative;
+  border-radius: 8px;
+  height: calc(100vh - 100px);
+  width: 100%;
+
+  .message-panel {
+    margin-bottom: 10px;
+  }
+
+  .message-queue-panel {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+
+  .submit-panel {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    .ant-input-affix-wrapper {
+      border-color: #d7d8d6 !important;
+      margin-bottom: 10px;
+    }
+  }
+}

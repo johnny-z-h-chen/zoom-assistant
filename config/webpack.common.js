@@ -106,7 +106,9 @@ module.exports = {
                         options: {
                             lessOptions: {
                                 modifyVars: {
-                                    'primary-color': '#e52c26'
+                                    'primary-color': '#e52c26',
+                                    'drawer-body-padding': '16px',
+                                    'card-head-padding': '6px'
                                 },
                                 javascriptEnabled: true
                             }

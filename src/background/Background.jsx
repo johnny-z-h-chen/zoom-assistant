@@ -16,7 +16,7 @@ export default class Background {
     initContentMenu() {
         create({
             id: 'showZoomAssistantPanel',
-            title: 'Open Zoom Assistant',
+            title: 'Open AI Assistant',
             onclick: () => {
                 backgroundClient.seedMessage(new ChromeMessage('show drawer'));
             }

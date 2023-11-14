@@ -1,5 +1,5 @@
 # antd-chrome-extension-boilerplate
-Zoom assistant is built by GAI platform，具有热加载功能。
+AI Assistant is built by GAI platform，具有热加载功能。
 
 ## 特性
 

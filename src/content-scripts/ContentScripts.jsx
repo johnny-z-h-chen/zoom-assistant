@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { contentClient } from '../chrome';
 import './ContentScripts.scss';
-import Chatroom from './Chatroom';
+import { Chatroom } from './Chatroom';
 
 export default class ContentScripts {
     constructor() {

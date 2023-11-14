@@ -1,0 +1,24 @@
+
+.message-panel {
+  .ant-card-bordered {
+    border-color: #d7d8d6 !important;
+    border-radius: 8px !important;
+
+    .ant-card-body {
+      padding: 16px !important;
+
+      .message-user-avatar-icon {
+        svg {
+          width: 26px !important;
+          height: 26px !important;
+        }
+      }
+
+      .ant-avatar-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
